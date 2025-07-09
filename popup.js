@@ -12,7 +12,7 @@ document.getElementById('getWeatherBtn').addEventListener('click', () => {
   function success(position) {
     const lat = position.coords.latitude;
     const lon = position.coords.longitude;
-    const apiKey = 'YOUR_API_KEY'; // 🔑 Replace with your OpenWeatherMap key
+    const apiKey = '250735982dd4191cfae8ca69e4c5d00c'; // 🔑 Replace with your OpenWeatherMap key
     const url = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&units=metric&appid=${apiKey}`;
 
     fetch(url)
